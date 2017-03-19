@@ -4,6 +4,7 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/snow"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -12,173 +13,183 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="¿Qué tres paises no han adoptado en su legislación el Sistema Internacional de unidades?" />
+            style="@style/TextStyleFont"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:text="@string/PrimeraPregunta"
+            android:textStyle="bold" />
+
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
             android:orientation="horizontal">
 
             <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Birmania" />
+                android:id="@+id/birmania"
+                style="@style/TextStyleFont"
+                android:text="@string/Birmania" />
 
             <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Reino Unido" />
+                android:id="@+id/reinoUnido"
+                style="@style/TextStyleFont"
+                android:text="@string/ReinoUnido" />
 
             <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Liberia" />
+                android:id="@+id/liberia"
+                style="@style/TextStyleFont"
+                android:text="@string/Liberia" />
 
             <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Estados Unidos" />
+                android:id="@+id/estadosUnidos"
+                style="@style/TextStyleFont"
+                android:text="@string/EstadosUnidos" />
 
             <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Canada" />
+                android:id="@+id/canada"
+                style="@style/TextStyleFont"
+                android:text="@string/Canada" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="El " />
+                style="@style/TextStyleFont"
+                android:text="@string/a"
+                android:textStyle="bold" />
 
             <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:id="@+id/metroField"
+                style="@style/TextStyleFont"
+                android:layout_width="60dp"
+                android:hint=""
+                android:imeOptions="flagNoExtractUi" />
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=" es la magnitud física básica de longitud del Sistema Internacional de Unidades (S.I.)" />
+                style="@style/TextStyleFont"
+                android:text="@string/b"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
             android:orientation="vertical">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="El S.I. consta de 7 unidades básicas:" />
+                style="@style/TextStyleFont"
+                android:layout_marginBottom="20dp"
+                android:text="@string/c"
+                android:textStyle="bold" />
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                style="@style/TextStyleFont"
+                android:layout_width="593dp"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:orientation="vertical">
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Magnitud Física Básica" />
+                        style="@style/TextStyleFont"
+                        android:layout_marginBottom="20dp"
+                        android:text="@string/mgb"
+                        android:textStyle="bold" />
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Longitud" />
+                        style="@style/TextStyleFont"
+                        android:text="@string/Longitud" />
+
+                    <EditText
+                        android:id="@+id/masaField"
+                        style="@style/TextStyleFont"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:imeOptions="flagNoExtractUi" />
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Masa" />
+                        style="@style/TextStyleFont"
+                        android:text="@string/Tiempo" />
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Tiempo" />
+                        style="@style/TextStyleFont"
+                        android:text="@string/CorrienteElectrica" />
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Corriente Eléctrica" />
+                        style="@style/TextStyleFont"
+                        android:text="@string/TemperaturaTermodinamica" />
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Temperatura Termodinámica" />
+                        style="@style/TextStyleFont"
+                        android:text="@string/CantidadSustancia" />
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Cantidad de sustancia" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Intensidad Luminosa" />
+                        style="@style/TextStyleFont"
+                        android:text="@string/IntensidadLuminosa" />
 
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    style="@style/TextStyleFont"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:orientation="vertical">
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Unidad Básica" />
+                        style="@style/TextStyleFont"
+                        android:layout_marginBottom="20dp"
+                        android:text="@string/UnidadBasica"
+                        android:textStyle="bold" />
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="metro" />
+                        style="@style/TextStyleFont"
+                        android:text="@string/metro" />
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="kilogramo" />
+                        style="@style/TextStyleFont"
+                        android:text="@string/kilogramo" />
+
+                    <EditText
+                        android:id="@+id/segundoField"
+                        style="@style/TextStyleFont"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:imeOptions="flagNoExtractUi" />
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="segundo" />
+                        style="@style/TextStyleFont"
+                        android:text="@string/amperio" />
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="amperio" />
+                        style="@style/TextStyleFont"
+                        android:text="@string/kelvin" />
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="kelvin" />
+                        style="@style/TextStyleFont"
+                        android:text="@string/mol" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="mol" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="candela" />
+                    <EditText
+                        android:id="@+id/candelaField"
+                        style="@style/TextStyleFont"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:imeOptions="flagNoExtractUi" />
 
                 </LinearLayout>
 
