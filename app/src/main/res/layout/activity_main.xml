@@ -197,6 +197,91 @@
 
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextStyleFont"
+                android:text="@string/d"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/basicasField"
+                style="@style/TextStyleFont"
+                android:layout_width="200dp"
+                android:imeOptions="flagNoExtractUi" />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/TextStyleFont"
+            android:text="@string/e"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp">
+
+            <RadioButton
+                style="@style/TextStyleFont"
+                android:text="@string/f" />
+
+            <RadioButton
+                android:id="@+id/kilometroRB"
+                style="@style/TextStyleFont"
+                android:text="@string/g" />
+
+            <RadioButton
+                style="@style/TextStyleFont"
+                android:text="@string/h" />
+        </RadioGroup>
+
+        <TextView
+            style="@style/TextStyleFont"
+            android:text="@string/i"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            style="@style/TextStyleFont"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/image" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
+
+                <RadioButton
+                    android:id="@+id/imagenSiRB"
+                    style="@style/TextStyleFont"
+                    android:text="@string/Si" />
+
+                <RadioButton
+                    style="@style/TextStyleFont"
+                    android:text="@string/No" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <Button
+            style="@style/TextStyleFont"
+            android:layout_gravity="center_horizontal"
+            android:onClick="submit"
+            android:backgroundTint="@color/colorPrimary"
+            android:textStyle="bold"
+            android:text="@string/Resultado" />
 
     </LinearLayout>
 
