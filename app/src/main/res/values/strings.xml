@@ -6,8 +6,7 @@
     <string name="Liberia">Liberia</string>
     <string name="EstadosUnidos">Estados Unidos</string>
     <string name="Canada">Canadá</string>
-    <string name="a">2.- El </string>
-    <string name="b"> es la magnitud física básica de longitud del Sistema Internacional de Unidades.</string>
+    <string name="b">2.- La magnitud física básica de longitud del Sistema Internacional de Unidades es el ...</string>
     <string name="c">3.- El S.I. consta de 7 unidades básicas:</string>
     <string name="mgb">Magnitud Física Básica</string>
     <string name="Longitud">Longitud</string>
@@ -22,7 +21,7 @@
     <string name="amperio">amperio</string>
     <string name="kelvin">kelvin</string>
     <string name="mol">mol</string>
-    <string name="d">4.- Las unidades derivadas son resultado de combinar magnitudes físicas </string>
+    <string name="d">4.- Las unidades derivadas son resultado de combinar magnitudes físicas ...</string>
     <string name="e">5.- Señala la afirmación correcta. Un kilometro es equivalente a: </string>
     <string name="f">1000 mts</string>
     <string name="g">1000 m</string>
